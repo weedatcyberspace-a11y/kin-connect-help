@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useLocalNetwork } from '@/hooks/useLocalNetwork';
 import { ContactList } from '@/components/ContactList';
 import { ChatWindow } from '@/components/ChatWindow';
+import { AIAssistant } from '@/components/AIAssistant';
 import { Button } from '@/components/ui/button';
 import { Wifi, WifiOff, Users } from 'lucide-react';
 
@@ -40,9 +41,12 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="flex items-center space-x-2 text-sm">
-          <Users className="w-4 h-4" />
-          <span>{contacts.filter(c => c.status === 'online').length} online</span>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 text-sm">
+            <Users className="w-4 h-4" />
+            <span>{contacts.filter(c => c.status === 'online').length} online</span>
+          </div>
+          <AIAssistant />
         </div>
       </div>
 
