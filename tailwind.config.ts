@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        whatsapp: {
+          green: "hsl(var(--whatsapp-green))",
+          dark: "hsl(var(--whatsapp-dark))",
+          light: "hsl(var(--whatsapp-light))",
+          gray: "hsl(var(--whatsapp-gray))",
+        },
+        message: {
+          sent: "hsl(var(--message-sent))",
+          received: "hsl(var(--message-received))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
